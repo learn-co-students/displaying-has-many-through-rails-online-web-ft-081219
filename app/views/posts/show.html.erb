@@ -4,6 +4,7 @@
 </p>
 Comments:
   <% @post.comments.each do |comment| %>
+    byebug
     <%= link_to comment.user.username, user_path(comment.user) %> said
     <%= comment.content %>
   <% end %>
